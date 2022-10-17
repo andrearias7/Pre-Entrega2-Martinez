@@ -208,7 +208,7 @@ ul.show {
 
 .imagen-inicial {
     height: auto;
-    width: auto;
+    width: 100vw;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -391,6 +391,8 @@ body {
     .container {
         grid-template-columns: 1fr;
         margin-bottom: 20px;
+        width: auto;
+        margin-left: 5px;
     }
 
     .descripcion {
@@ -446,6 +448,28 @@ body {
         grid-template-columns: 2fr;
 
     }
+}
+
+@media screen and (max-width: 420px) {
+    .clase-footer {
+
+        height: 220px;
+    }
+
+    .ubicacion {
+
+        font-family: 'Pacifico', cursive;
+        font-size: 20px;
+        padding: 5px 5px;
+        margin: 10px;
+        text-align: right;
+    }
+
+    .direccion {
+        font-family: 'Kanit', sans-serif;
+        text-align: right;
+    }
+
 }
 
 /*----------FIN PÁGINA INICIO-------*/
@@ -709,10 +733,22 @@ body {
         height: 50px;
         right: 25%;
         top: 33%;
-
-
-
     }
+}
+
+
+@media screen and (max-width: 600px) {
+    .graphic-herramienta {
+
+        right: 19%;
+        top: 33%;
+    }
+
+    .tarjeta-1 {
+        margin: 10px 0;
+        padding-left: 10px;
+    }
+
 }
 
 /*.----- FIN SECCIÓN SERVICIOS----*/
