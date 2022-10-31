@@ -1,0 +1,144 @@
+.bo-galeria {
+	background: rgb(240, 240, 240);
+	background: linear-gradient(0deg, rgba(240, 240, 240, 1) 1%, rgba(104, 207, 194, 0.09987745098039214) 95%);
+}
+.title-galeria {
+	text-align: Center;
+	font-family: $fuentecursiva;
+	font-size: 50px;
+	color: #003300;
+}
+input[type="radio"] {
+	display: none;
+}
+.container-category {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	justify-content: center;
+	label {
+		padding: 6px 40px;
+		margin: 10px;
+		font-size: 20px;
+		background: #33ff99;
+		border-radius: 5px;
+		cursor: pointer;
+		font-family: $fuentecursiva;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+.grid-galeria {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-auto-rows: minmax(200px, auto);
+	gap: 20px;
+	padding: 20px;
+	overflow: hidden;
+	img {
+		&:hover {
+			transform: scale(1.3);
+			transform: perspective(1.3);
+			cursor: pointer;
+			transition: all 1s;
+		}
+	}
+}
+.grid-item {
+	border-radius: 5px;
+	box-shadow: 0 5px 10px #000;
+}
+[value="Apartamentos"] {
+	&:Checked {
+		~.grid-galeria {
+			.grid-item {
+				&:not([data-category~="Apartamentos"]) {
+					display: none;
+				}
+			}
+		}
+		~ {
+			.container-category {
+				[for="Apartamentos"] {
+					background-color: $botonesgaleria;
+				}
+			}
+		}
+	}
+}
+[value="Fincas"] {
+	&:Checked {
+		~.grid-galeria {
+			.grid-item {
+				&:not([data-category~="Fincas"]) {
+					display: none;
+				}
+			}
+		}
+		~ {
+			.container-category {
+				[for="Fincas"] {
+					background-color: $botonesgaleria;
+				}
+			}
+		}
+	}
+}
+[value="Centrocomercial"] {
+	&:Checked {
+		~.grid-galeria {
+			.grid-item {
+				&:not([data-category~="Centrocomercial"]) {
+					display: none;
+				}
+			}
+		}
+		~ {
+			.container-category {
+				[for="Centrocomercial"] {
+					background-color: $botonesgaleria;
+				}
+			}
+		}
+	}
+}
+[value="Piscinas"] {
+	&:Checked {
+		~.grid-galeria {
+			.grid-item {
+				&:not([data-category~="Piscinas"]) {
+					display: none;
+				}
+			}
+		}
+		~ {
+			.container-category {
+				[for="Piscinas"] {
+					background-color: $botonesgaleria;
+				}
+			}
+		}
+	}
+}
+[value="Vias"] {
+	&:Checked {
+		~.grid-galeria {
+			.grid-item {
+				&:not([data-category~="Vias"]) {
+					display: none;
+				}
+			}
+		}
+		~ {
+			.container-category {
+				[for="Vias"] {
+					background-color:$botonesgaleria;
+				}
+			}
+		}
+	}
+}
+

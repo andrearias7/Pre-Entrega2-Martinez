@@ -1,0 +1,38 @@
+.clase-footer {
+	border: 1px solid green;
+	background-color: #33ff99;
+	height: 150px;
+	margin-top: 45px;
+}
+.medios-pago {
+	float: left;
+	i {
+		font-size: 40px;
+		text-align: left;
+		margin: 5px;
+		padding: 2px 10px;
+		color: black;
+		&:hover {
+			transform: scale(1.5);
+			transition: all 0.5 ease;
+		}
+	}
+}
+.t-mediospago {
+	font-family: $fuentecursiva;
+	font-size: 30px;
+	color: black;
+	padding: 2px 10px;
+	margin: 10px;
+}
+.ubicacion {
+	font-family: $fuentecursiva;
+	font-size: 30px;
+	padding: 5px 15px;
+	margin: 10px;
+	text-align: right;
+}
+.direccion {
+	font-family: $fuentecursiva;
+	text-align: right;
+}

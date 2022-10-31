@@ -1,0 +1,138 @@
+.imagen-inicial {
+	height: auto;
+	width: 100vw;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+body {
+	font-family: 'Kanit', sans-serif;
+	font-size: large;
+	background: rgb(254, 255, 255);
+	background: radial-gradient(circle, rgba(254, 255, 255, 1) 0%, rgba(148, 233, 207, 0.5984768907563025) 100%);
+}
+.descripcion {
+	margin: 0%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 100px 400px;
+	grid-column-gap: 5px;
+	grid-row-gap: 15px;
+	justify-items: center;
+	padding-top: 20px;
+}
+.parrafo-1 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.contenido-parrafo1 {
+	width: 700px;
+}
+.imagen-mapa {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+.puntos-venta {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	i {
+		font-size: xx-large;
+	}
+}
+.lista-1 {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 25px;
+	i {
+		&:hover {
+			transform: scale(1.5);
+			transition: all 0.5 ease;
+		}
+	}
+}
+.cards {
+	display: flex;
+	@include alineacion;
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 940px;
+	gap: 15px;
+	margin: auto;
+	@include alineacion;
+	margin-left: 45px;
+}
+.tarjeta-movil {
+	height: 225px;
+	width: 300px;
+	overflow: hidden;
+	margin: auto;
+	padding: 10px;
+	border-radius: 3px;
+	border: 1px solid #fff;
+	transition: all .4s ease-in-out;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	background: linear-gradient(-135deg, #c850c0, #4158d0);
+	&:hover {
+		height: 450px;
+		width: 300px;
+		border-radius: 5px;
+		box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+	}
+}
+.card-encabezado {
+	img {
+		position: relative;
+		border-radius: 50%;
+		display: block;
+		height: 200px;
+		width: 200px;
+		border-left: 8px solid #fff;
+		object-fit: cover;
+		margin: 20px auto;
+		transition: all 0.3s ease;
+	}
+	position: relative;
+	&:before {
+		content: ' ';
+		position: absolute;
+		opacity: .7;
+		width: 70px;
+		height: 70px;
+		bottom: 0;
+		left: -10px;
+		border-radius: 20px;
+		background-color: rgb(238, 42, 98);
+		transform: rotate(120deg);
+	}
+	&:after {
+		content: ' ';
+		position: absolute;
+		opacity: .7;
+		border-radius: 50%;
+		z-index: 20;
+		background-color: yellow;
+		width: 50px;
+		height: 50px;
+		top: 0;
+		right: 25px;
+	}
+}
+.info-personal {
+	&:nth-child(1) {
+		font-size: 20px;
+		font-weight: bold;
+		padding: 10px;
+		line-height: 25px;
+	}
+	&:nth-child(2) {
+		margin: 15px 0;
+	}
+	color: #fff;
+}

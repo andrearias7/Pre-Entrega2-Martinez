@@ -1,0 +1,77 @@
+.title-quienessomos {
+	text-align: Center;
+	font-family: $fuentecursiva;
+	font-size: 30px;
+	color: #003300;
+	font-size: 35px;
+	color: #000;
+}
+.contenido-quienesomos {
+	background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-formas-blancas_79603-1362.jpg?w=2000);
+}
+.d-quienessomos {
+	display: flex;
+	align-items: center;
+	justify-content: Center;
+	margin: 20px;
+}
+.tarjeta-qs {
+	position: relative;
+	width: 300px;
+	height: 320px;
+	margin: 20px;
+	.face {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		border-radius: 10px;
+		overflow: hidden;
+		transition: .5s;
+	}
+	.front {
+		transform: perspective(600px) rotate(0deg);
+		box-shadow: 0 5px 10px #000;
+		img {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+		h3 {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 35px;
+			line-height: 45px;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.4);
+			text-align: center;
+		}
+	}
+	.back {
+		transform: perspective(600px) rotateY(180deg);
+		background: rgb(3, 35, 54);
+		padding: 15px;
+		color: #f3f3f3;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		box-shadow: 0 5px 10px #000;
+		text-align: center;
+		font-size: 15px;
+		h3 {
+			font-size: 30px;
+			margin-top: 20px;
+			letter-spacing: 1px;
+		}
+	}
+	&:hover {
+		.front {
+			transform: perspective(600px) rotateY(180deg);
+		}
+		.back {
+			transform: perspective(600px) rotateY(360deg);
+		}
+	}
+}

@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios y asesorias para diferentes proyectos de construcción">
+    <meta name="keywords"
+        content="Construcción, diseño, ingeniería civil, arquitectura, empresas de construcción, constructoras">
     <title>Galería</title>
-    <link rel="Stylesheet" href="../CSS/main.css">
+    <link rel="Stylesheet" href="../CSS/main2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -25,15 +28,15 @@
         <h3 class="frase-encabezado">
             ¡Que no se quede en tu imaginación, hazlo realidad con nosotros!
         </h3>
-    
+
         <header class="header-class">
-    
-    
+
+
             <nav class="menu">
                 <div class="logo">
                     <img src="../images/logo.jpeg" alt="logo">
                 </div>
-    
+
                 <ul class=navegador>
                     <li class="active"><a href="../index.html">Inicio</a></li>
                     <li class="b-quienessomos"><a href="../pages/quienes_somos.html">Quienes Somos</a></li>
@@ -45,121 +48,174 @@
                     <i class="fa-solid fa-bars"></i>
                 </span>
             </nav>
-    
+
         </header>
 
-    <!---Fin Encabezado-->
+        <!---Fin Encabezado-->
 
 
 
-    <h2 class="title-galeria"> Galería </h2>
+        <h2 class="title-galeria"> Galería </h2>
 
-    <!---Inicio de portafolio de fotos-->
+        <!---Inicio de portafolio de fotos-->
 
-    <main class="df-galeria">
+        <main>
 
-        <!---Inicio Zona húmeda-->
-        <div class="cont-galeria">
-            
-            <h2 class="zonas-humedas"> Zonas Húmedas </h2>
-            <ul class="slider">
-                <li>
-                    <input type="radio" id="sbutton1" name="sradio" checked>
-                    <label for="sbutton1"></label>
-                    <img src="../images/Piscinas/p1.png" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="sbutton2" name="sradio">
-                    <label for="sbutton2"></label>
-                    <img src="../images/Piscinas/p2.png" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="sbutton3" name="sradio">
-                    <label for="sbutton3"></label>
-                    <img src="../images/Piscinas/p3.png" alt="">
-                </li>
-            </ul>
-        </div>
-        <!---Fin programación Zona húmeda-->
+            <input type="radio" id="Apartamentos" name="categories" value="Apartamentos">
+            <input type="radio" id="Fincas" name="categories" value="Fincas">
+            <input type="radio" id="Piscinas" name="categories" value="Piscinas">
+            <input type="radio" id="Vias" name="categories" value="Vias">
+            <input type="radio" id="Centrocomercial" name="categories" value="Centrocomercial">
 
-        <!---Inicio programación Apartamentos-->
-        <div class="cont-galeria2">
 
-            <h2 class="apartamentos"> Apartamentos </h2>
-            <ul class="slider2">
-                <li>
-                    <input type="radio" id="sbutton21" name="sradio2" checked>
-                    <label for="sbutton21"></label>
-                    <img src="../images/Apartamentos/a1.png" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="sbutton22" name="sradio2">
-                    <label for="sbutton22"></label>
-                    <img src="../images/Apartamentos/a2.png" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="sbutton23" name="sradio2">
-                    <label for="sbutton23"></label>
-                    <img src="../images/Apartamentos/a3.png" alt="">
-                </li>
-            </ul>
-        </div>
-        <!---Fin programación Apartamentos-->
+            <div class="container-category">
+                <label for="Apartamentos">Apartamentos</label>
+                <label for="Fincas"> Fincas</label>
+                <label for="Piscinas">Zonas Húmedas</label>
+                <label for="Vias">Vías</label>
+                <label for="Centrocomercial">Centros Comerciales</label>
 
-        <!---Inicio  programación Vías-->
-        <div class="cont-galeria3">
+            </div>
+            <!-- SLIDER 1-->
+            <section class="grid-galeria">
 
-            <h2 class="vias"> Vías </h2>
-            <ul class="slider3">
-                <li>
-                    <input type="radio" id="sbutton31" name="sradio3" checked>
-                    <label for="sbutton31"></label>
-                    <img src="../images/Vias/v1.png" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="sbutton32" name="sradio3">
-                    <label for="sbutton32"></label>
-                    <img src="../images/Vias/v2.png" alt="">
-                </li>
-                <li>
-                    <input type="radio" id="sbutton33" name="sradio3">
-                    <label for="sbutton33"></label>
-                    <img src="../images/Vias/v3.png" alt="">
-                </li>
-            </ul>
-        </div>
-        <!---Fin  programación Vías-->
+                <!---APARTAMENTOS-->
+                <div class="grid-item" data-category="Apartamentos">
+                    <img src="../images/apartamento/ap1.jpeg" alt="Apartamento 1">
+                </div>
+                <div class="grid-item" data-category="Apartamentos">
+                    <img src="../images/apartamento/ap2.jpeg" alt="Apartamento 2">
+                </div>
+                <div class="grid-item" data-category="Apartamentos">
+                    <img src="../images/apartamento/ap3.jpeg" alt="Apartamento 3">
+                </div>
+                <div class="grid-item" data-category="Apartamentos">
+                    <img src="../images/apartamento/ap4.jpeg" alt="Apartamento 4">
+                </div>
+                <div class="grid-item" data-category="Apartamentos">
+                    <img src="../images/apartamento/ap5.jpeg" alt="Apartamento 5">
+                </div>
+                <div class="grid-item" data-category="Apartamentos">
+                    <img src="../images/apartamento/ap6.jpeg" alt="Apartamento 6">
+                </div>
+                <div class="grid-item" data-category="Apartamentos">
+                    <img src="../images/apartamento/ap7.jpeg" alt="Apartamento 7">
+                </div>
+                <div class="grid-item" data-category="Apartamentos">
+                    <img src="../images/apartamento/ap8.jpeg" alt="Apartamento 8">
+                </div>
+                <!---CENTROS COMERCIALES -->
 
-    </main>
+                <div class="grid-item" data-category="Centrocomercial">
+                    <img src="../images/centrocomercial/cc1.jpeg" alt="Centrocomercial1">
+                </div>
+                <div class="grid-item" data-category="Centrocomercial">
+                    <img src="../images/centrocomercial/cc2.jpeg" alt="Centrocomercial2">
+                </div>
+                <div class="grid-item" data-category="Centrocomercial">
+                    <img src="../images/centrocomercial/cc3.jpeg" alt="Centrocomercial3">
+                </div>
+                <div class="grid-item" data-category="Centrocomercial">
+                    <img src="../images/centrocomercial/cc4.jpeg" alt="Centrocomercial4">
+                </div>
+                <div class="grid-item" data-category="Centrocomercial">
+                    <img src="../images/centrocomercial/cc5.jpeg" alt="Centrocomercial5">
+                </div>
+                <div class="grid-item" data-category="Centrocomercial">
+                    <img src="../images/centrocomercial/cc6.jpeg" alt="Centrocomercial6">
+                </div>
+                <div class="grid-item" data-category="Centrocomercial">
+                    <img src="../images/centrocomercial/cc7.jpeg" alt="Centrocomercial7">
+                </div>
+                <div class="grid-item" data-category="Centrocomercial">
+                    <img src="../images/centrocomercial/cc8.jpeg" alt="Centrocomercial8">
+                </div>
 
-    <!---Fin de portafolio de fotos-->
+                <!---PISCINA-->
+                <div class="grid-item" data-category="Piscinas">
+                    <img src="../images/piscina/pi1.jpeg" alt="Piscinas1">
+                </div>
+                <div class="grid-item" data-category="Piscinas">
+                    <img src="../images/piscina/pi2.jpeg" alt="Piscinas2">
+                </div>
+                <div class="grid-item" data-category="Piscinas">
+                    <img src="../images/piscina/pi3.jpeg" alt="Piscinas3">
+                </div>
+                <div class="grid-item" data-category="Piscinas">
+                    <img src="../images/piscina/pi4.jpg" alt="Piscinas4">
+                </div>
+                <!---VIAS -->
+                <div class="grid-item" data-category="Vias">
+                    <img src="../images/carreteras/ca1.jpeg" alt="Vias1">
+                </div>
+                <div class="grid-item" data-category="Vias">
+                    <img src="../images/carreteras/ca2.jpeg" alt="Vias2">
+                </div>
+                <div class="grid-item" data-category="Vias">
+                    <img src="../images/carreteras/ca3.jpeg" alt="Vias3">
+                </div>
+                <div class="grid-item" data-category="Vias">
+                    <img src="../images/carreteras/ca4.jpeg" alt="Vias4">
+                </div>
 
-    <!---Inicio footer-->
-    <footer class="clase-footer">
+                <!---FINCAS -->
+                <div class="grid-item" data-category="Fincas">
+                    <img src="../images/pecebrera/pe1.jpeg" alt="Fincas1">
+                </div>
+                <div class="grid-item" data-category="Fincas">
+                    <img src="../images/pecebrera/pe2.jpeg" alt="Fincas2">
+                </div>
+                <div class="grid-item" data-category="Fincas">
+                    <img src="../images/pecebrera/pe3.jpeg" alt="Fincas3">
+                </div>
+                <div class="grid-item" data-category="Fincas">
+                    <img src="../images/pecebrera/pe4.jpeg" alt="Fincas4">
+                </div>
+                <div class="grid-item" data-category="Fincas">
+                    <img src="../images/pecebrera/pe5.jpeg" alt="Fincas5">
+                </div>
+                <div class="grid-item" data-category="Fincas">
+                    <img src="../images/pecebrera/pe6.jpeg" alt="Fincas6">
+                </div>
+                <div class="grid-item" data-category="Fincas">
+                    <img src="../images/pecebrera/pe7.jpeg" alt="Fincas7">
+                </div>
 
-        <div class="medios-pago">
-            <p class="t-mediospago"> Hablemos...<i class="fa-regular fa-heart"></i></p>
-            <a href="https://www.instagram.com/construcciviles/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://accounts.google.com/v3/signin/identifier?dsh=S755753285%3A1664159303394726&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AQDHYWqMPL8tv5fTED9iCKcGJuY2OD2cLFxwEZUM-AtxUEPD3ThKX-P4WZTKW1r7TzpJ8SYhSm870A"
-                target="_blank">
-                <i class="fa-regular fa-envelope"></i>
-            </a>
-            <a href="https://web.whatsapp.com/" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i></i>
-            </a>
-        </div>
 
-        <div>
-            <p class="ubicacion"> Sede Principal</p>
-            <p class="direccion">Calle 5A#12-25,Barrio la Ceiba, Girardota-Antioquia</p>
-        </div>
+            </section>
 
-        </div>
-    </footer>
-    <!---Fin footer-->
 
-</body>
+        </main>
+
+        <!---Fin de portafolio de fotos-->
+
+        <!---Inicio footer-->
+        <footer class="clase-footer">
+
+            <div class="medios-pago">
+                <p class="t-mediospago"> Hablemos...<i class="fa-regular fa-heart"></i></p>
+                <a href="https://www.instagram.com/construcciviles/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://accounts.google.com/v3/signin/identifier?dsh=S755753285%3A1664159303394726&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AQDHYWqMPL8tv5fTED9iCKcGJuY2OD2cLFxwEZUM-AtxUEPD3ThKX-P4WZTKW1r7TzpJ8SYhSm870A"
+                    target="_blank">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i></i>
+                </a>
+            </div>
+
+            <div>
+                <p class="ubicacion"> Sede Principal</p>
+                <p class="direccion">Calle 5A#12-25,Barrio la Ceiba, Girardota-Antioquia</p>
+            </div>
+
+            </div>
+        </footer>
+        <!---Fin footer-->
+        <script src="../pages/app.js"></script>
+
+    </body>
 
 </html>

@@ -1,0 +1,242 @@
+@keyframes turn1 {
+	to {
+		transform: rotate(1turn);
+	}
+}
+@keyframes turn2{
+	to {
+		transform: rotate(-1turn);
+	}
+}
+.title-servicios {
+	text-align: Center;
+	font-family: $fuentecursiva;
+	font-size: 30px;
+	color: #003300;
+	background-color: white;
+}
+.f-servicios {
+	background-color: white;
+}
+.graphic {
+	position: relative;
+	display: grid;
+	padding-top: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+}
+.graphic-man {
+	grid-column-start: 1;
+	height: 400px;
+	margin-left: 200px;
+}
+.graphic-circles {
+	grid-column-start: 2;
+	height: 400px;
+}
+.graphic-herramienta {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	right: 22%;
+	top: 42%;
+	animation: turn2 15s linear infinite;
+}
+.tarjetas-servicioss {
+	display: flex;
+	@include alineacion;
+	flex-wrap: wrap;
+}
+.graphic-circle2 {
+	animation: turn1 15s linear infinite;
+}
+.tarjeta-1 {
+	width: 350px;
+	height: 250px;
+	border-radius: 3px;
+	margin-top: 20px;
+	border: 2px solid rgb(0, 66, 128);
+	background-image: url(../images/vivienda.jpg);
+	background-size: 500px;
+	background-repeat: no-repeat;
+	display: flex;
+	@include alineacion;
+	box-shadow: 0 5px 10px #000;
+	margin-left: 10px;
+	&:hover {
+		transition: 1s;
+		background-size: 430px;
+		filter: hue-rotate(120deg);
+	}
+}
+.texto-tarjeta1 {
+	@extend %textotarjetas;
+	transition: 1s;
+	&:hover {
+		font-weight: bold;
+		transition: 1s;
+		backdrop-filter: blur(2px);
+		color: black;
+		font-size: 40px;
+	}
+}
+.tarjeta-2 {
+	width: 350px;
+	height: 250px;
+	border-radius: 3px;
+	margin-top: 20px;
+	border: 2px solid rgb(0, 66, 128);
+	background-image: url(../images/reaparacion.jpg);
+	background-size: 350px;
+	background-repeat: no-repeat;
+	padding: 10px 10px;
+	display: flex;
+	@include alineacion;
+	box-shadow: 0 5px 10px #000;
+	margin-left: 10px;
+	&:hover {
+		transition: 1s;
+		background-size: 340px;
+		filter: hue-rotate(120deg);
+	}
+}
+.texto-tarjeta2 {
+	@extend %textotarjetas;
+	transition: 1s;
+	&:hover {
+		font-weight: bold;
+		transition: 1s;
+		backdrop-filter: blur(2px);
+		color: black;
+		font-size: 40px;
+	}
+}
+.tarjeta-3 {
+	width: 350px;
+	height: 250px;
+	border-radius: 3px;
+	margin-top: 20px;
+	border: 2px solid rgb(0, 66, 128);
+	background-image: url(../images/edificio.png);
+	background-size: 360px;
+	background-repeat: no-repeat;
+	padding: 10px 10px;
+	display: flex;
+	@include alineacion;
+	box-shadow: 0 5px 10px #000;
+	margin-left: 10px;
+	&:hover {
+		transition: 1s;
+		background-size: 355px;
+		filter: hue-rotate(120deg);
+	}
+}
+.texto-tarjeta3 {
+	@extend %textotarjetas;
+	transition: 1s;
+	&:hover {
+		font-weight: bold;
+		transition: 1s;
+		backdrop-filter: blur(2px);
+		color: whitesmoke;
+		font-size: 30px;
+		background-color: #31384a;
+		width: 300px;
+	}
+}
+.tarjeta-4 {
+	width: 350px;
+	height: 250px;
+	border-radius: 3px;
+	margin-top: 20px;
+	border: 2px solid rgb(0, 66, 128);
+	background-image: url(../images/piscinaa.jpg);
+	background-size: 440px;
+	background-repeat: no-repeat;
+	padding: 10px 10px;
+	display: flex;
+	@include alineacion;
+	box-shadow: 0 5px 10px #000;
+	margin-left: 10px;
+	&:hover {
+		transition: 1s;
+		background-size: 425px;
+		filter: hue-rotate(120deg);
+	}
+}
+.texto-tarjeta4 {
+	@extend %textotarjetas;
+	transition: 1s;
+	&:hover {
+		font-weight: bold;
+		transition: 1s;
+		backdrop-filter: blur(2px);
+		color: black;
+		font-size: 30px;
+		width: 435px;
+	}
+}
+.tarjeta-5 {
+	width: 350px;
+	height: 250px;
+	border-radius: 3px;
+	margin-top: 10px;
+	border: 2px solid rgb(0, 66, 128);
+	background-image: url(../images/vias.jpg);
+	background-size: 440px;
+	background-repeat: no-repeat;
+	padding: 10px 10px;
+	display: flex;
+	@include alineacion;
+	box-shadow: 0 5px 10px #000;
+	margin-left: 10px;
+	&:hover {
+		transition: 1s;
+		background-size: 425px;
+		filter: hue-rotate(120deg);
+	}
+}
+.texto-tarjeta5 {
+	@extend %textotarjetas;
+	transition: 1s;
+	&:hover {
+		font-weight: bold;
+		transition: 1s;
+		backdrop-filter: blur(2px);
+		color: black;
+		font-size: 30px;
+		width: 435px;
+	}
+}
+.tarjeta-6 {
+	width: 350px;
+	height: 250px;
+	border-radius: 3px;
+	margin-top: 20px;
+	border: 2px solid rgb(0, 66, 128);
+	background-image: url(../images/redes.jpg);
+	background-size: 350px;
+	background-repeat: no-repeat;
+	padding: 10px 10px;
+	display: flex;
+	@include alineacion;
+	box-shadow: 0 5px 10px #000;
+	margin-left: 10px;
+	&:hover {
+		transition: 1s;
+		background-size: 425px;
+		filter: hue-rotate(120deg);
+	}
+}
+.texto-tarjeta6 {
+	@extend %textotarjetas;
+	transition: 1s;
+	&:hover {
+		font-weight: bold;
+		transition: 1s;
+		backdrop-filter: blur(2px);
+		color: black;
+		font-size: 30px;
+		width: 435px;
+	}
+}

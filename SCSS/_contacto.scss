@@ -1,0 +1,45 @@
+.title-contacto {
+	text-align: Center;
+	font-family: $fuentecursiva;
+	font-size: 50px;
+	color: #003300;
+	i {
+		&:hover {
+			transform: scale(1.5);
+			transition: all 0.5 ease;
+		}
+	}
+}
+form {
+	width: 450px;
+	margin: auto;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 10px 20px;
+	border: 2px solid cyan;
+	border-radius: 15px;
+}
+input {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-family: 'Kanit', sans-serif;
+}
+textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-family: 'Kanit', sans-serif;
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+}
+#button {
+	background: #31384a;
+	color: #fff;
+	&:hover {
+		cursor: pointer;
+		background-color: rgba(0, 0, 255, 0.24);
+	}
+}

@@ -1,0 +1,13 @@
+$botonesgaleria:green;
+$fuentecursiva:'Pacifico', cursive;
+@mixin alineacion {
+    justify-content: center;
+    align-items: center;
+   }
+%textotarjetas{
+    text-align: center;
+	align-items: center;
+	font-size: 25px;
+	cursor: pointer;
+	color: transparent;
+}
