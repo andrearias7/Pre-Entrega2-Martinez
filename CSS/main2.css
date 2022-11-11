@@ -177,7 +177,7 @@ input[type="radio"] {
   font-family: "Pacifico", cursive;
   font-size: large;
   font-weight: 200;
-  width: 100vw;
+  width: auto;
   justify-content: center;
   border: 2px solid black; }
 
@@ -194,7 +194,7 @@ img {
   background-color: white;
   border: 3px solid black;
   height: 120px;
-  width: 100vw;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -234,7 +234,7 @@ ul.show {
 
 .imagen-inicial {
   height: auto;
-  width: 100vw;
+  width: auto;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3); }
 
 body {
