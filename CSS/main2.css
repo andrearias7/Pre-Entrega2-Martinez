@@ -219,10 +219,6 @@ img {
       background-color: #33ff99;
       transition: 0.3s; }
 
-li.active {
-  background-color: #33ff99;
-  transition: 0.3s; }
-
 .b-menu {
   margin-right: 45px;
   font-size: 35px;
